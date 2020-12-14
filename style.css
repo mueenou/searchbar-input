@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+
+body {
+    align-items: center;
+    min-height: 100vh;
+}
+
+#search-box {
+    position: relative;
+    box-shadow: 0 0 30px 0px #BCBCC6;
+    height: 3rem;
+    width: 25rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: auto;
+    margin-top: 15rem;
+}
+
+#search-box input {
+    border: none;
+    width: 79%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    padding-top: 13px;
+}
+
+#search-box button {
+    color: white;
+    width: 20%;
+    height: 100%;
+    border: none;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    background-color: #4B90DD;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+#search-box button:focus {
+    outline: none;
+    background-color: #386ca7;
+}
+
+#search-box button:hover {
+    background-color: #4380c5;
+    cursor: pointer;
+}
+
+#search-box input:focus {
+    outline: none;
+}
+
+#search-box input::placeholder {
+    font-weight: bold;
+    color: #BCBCCC;
+    padding-top: 13px;
+}
+
+.players-container {
+    z-index: 9999;
+    left: 0;
+    position: absolute;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    top: 3.5rem;
+    box-shadow: 0 0 30px 0px #BCBCC6;
+    width: 25rem;
+    border: none;
+    border-radius: 3px;
+    /* padding: 5px; */
+
+}
+
+.players-container ul {
+    list-style-type: none;
+}
+
+.players-container ul li {
+    padding: 10px;
+}
+
+.players-container ul li:hover {
+    background-color: #e0e0f0;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 10px;
+}
